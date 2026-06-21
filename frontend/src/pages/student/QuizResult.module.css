@@ -1,0 +1,80 @@
+.page { display:flex; flex-direction:column; gap:22px; animation:fadeIn 0.4s ease; max-width:960px; margin:0 auto; width:100%; }
+.center { display:flex; justify-content:center; align-items:center; min-height:60vh; }
+.topActions { display:flex; justify-content:space-between; align-items:center; }
+.back { display:flex; align-items:center; gap:6px; color:var(--gray-600); font-size:0.875rem; font-weight:500; }
+.back:hover { color:var(--primary); }
+.certBtn { display:flex; align-items:center; gap:6px; background:linear-gradient(135deg,#d97706,#f59e0b); color:white; padding:9px 18px; border-radius:var(--radius-sm); font-weight:700; font-size:0.82rem; transition:all 0.2s; }
+.certBtn:hover { transform:translateY(-1px); color:white; }
+
+.hero { border-radius:var(--radius-lg); padding:36px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.heroPass { background:linear-gradient(135deg,#064e3b,#059669,#34d399); }
+.heroFail { background:linear-gradient(135deg,#7f1d1d,#dc2626,#f87171); }
+.heroContent { flex:1; }
+.heroEmoji { font-size:2.5rem; margin-bottom:8px; }
+.hero h1 { font-size:1.8rem; color:white; margin-bottom:6px; }
+.heroQuiz { color:rgba(255,255,255,0.8); font-size:0.95rem; margin-bottom:12px; }
+.rankBadge,.xpBadge { display:inline-flex; align-items:center; gap:6px; padding:6px 14px; border-radius:99px; font-size:0.82rem; font-weight:700; margin-right:8px; margin-top:6px; }
+.rankBadge { background:rgba(255,255,255,0.2); color:white; }
+.xpBadge { background:rgba(255,255,255,0.2); color:white; }
+.heroScore { position:relative; width:120px; height:120px; flex-shrink:0; }
+.scoreOverlay { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.scorePct { font-family:var(--font-display); font-size:1.8rem; font-weight:800; color:white; line-height:1; }
+.scoreRaw { font-size:0.78rem; color:rgba(255,255,255,0.75); }
+
+.statsRow { display:grid; grid-template-columns:repeat(6,1fr); gap:12px; }
+.statCard { background:white; border-radius:var(--radius); padding:16px 10px; border:1px solid var(--gray-100); box-shadow:var(--shadow-sm); text-align:center; border-top:3px solid; display:flex; flex-direction:column; align-items:center; gap:6px; }
+.statEmoji { font-size:1.4rem; }
+.statVal { font-family:var(--font-display); font-size:1.3rem; font-weight:800; }
+.statLabel { font-size:0.68rem; color:var(--gray-500); font-weight:500; }
+
+.certCard { display:flex; align-items:center; gap:16px; padding:18px 22px; background:linear-gradient(135deg,#fffbeb,#fef3c7); border:2px solid #fde68a; border-radius:var(--radius); }
+.certCard span { font-size:2rem; }
+.certCard strong { font-weight:800; color:var(--gray-800); display:block; margin-bottom:3px; }
+.certCard p { font-size:0.82rem; color:var(--gray-600); }
+.certLink { margin-left:auto; color:#d97706; font-weight:700; font-size:0.82rem; white-space:nowrap; }
+
+.feedbackCard { background:white; border-radius:var(--radius); padding:22px; border:1px solid var(--gray-100); box-shadow:var(--shadow-sm); }
+.feedbackCard h3 { font-size:0.95rem; display:flex; align-items:center; gap:7px; margin-bottom:14px; }
+.stars { display:flex; gap:6px; margin-bottom:12px; }
+.star { background:none; border:none; font-size:1.8rem; color:var(--gray-300); cursor:pointer; transition:all 0.1s; padding:0; }
+.starOn { color:#f59e0b; transform:scale(1.1); }
+.feedbackInput { width:100%; padding:10px 12px; border:1.5px solid var(--gray-200); border-radius:var(--radius-sm); font-size:0.875rem; outline:none; resize:none; margin-bottom:10px; }
+.feedbackInput:focus { border-color:var(--primary); }
+.feedbackBtn { padding:10px 24px; background:var(--primary); color:white; border:none; border-radius:var(--radius-sm); font-weight:700; font-size:0.875rem; cursor:pointer; transition:all 0.2s; }
+.feedbackBtn:disabled { opacity:0.5; cursor:not-allowed; }
+.feedbackBtn:hover:not(:disabled) { background:var(--primary-dark); }
+.feedbackDone { display:flex; align-items:center; gap:8px; color:#10b981; font-weight:600; }
+
+.reviewSection { background:white; border-radius:var(--radius); padding:22px; border:1px solid var(--gray-100); box-shadow:var(--shadow-sm); }
+.reviewHead { display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; }
+.reviewHead h2 { font-size:1rem; }
+.reviewHead span { font-size:0.82rem; color:var(--gray-500); background:var(--gray-100); padding:4px 12px; border-radius:99px; font-weight:600; }
+.reviewList { display:flex; flex-direction:column; gap:14px; }
+.reviewCard { border-radius:var(--radius-sm); border:1.5px solid; padding:18px; }
+.rcCorrect { border-color:#a7f3d0; background:#f0fdf4; }
+.rcWrong { border-color:#fca5a5; background:#fff5f5; }
+.rcSkip { border-color:#fde68a; background:#fffbeb; }
+.rcTop { display:flex; align-items:center; gap:10px; margin-bottom:10px; flex-wrap:wrap; }
+.rcIdx { font-size:0.72rem; font-weight:800; color:var(--gray-500); background:var(--gray-100); padding:2px 10px; border-radius:99px; }
+.rcFlagged { font-size:0.72rem; font-weight:700; color:#d97706; }
+.rcStatus { font-size:0.75rem; font-weight:800; padding:3px 12px; border-radius:99px; }
+.rcStatusPass { background:#dcfce7; color:#15803d; } .rcStatusFail { background:#fee2e2; color:#dc2626; } .rcStatusSkip { background:#fef9c3; color:#854d0e; }
+.rcMarks { margin-left:auto; font-size:0.78rem; font-weight:700; color:var(--gray-600); }
+.rcQ { font-size:0.9rem; color:var(--gray-800); font-weight:500; margin-bottom:10px; line-height:1.55; }
+.rcOptions { display:flex; flex-direction:column; gap:7px; }
+.rcOpt { display:flex; align-items:center; gap:9px; padding:9px 13px; border-radius:8px; border:1.5px solid var(--gray-200); background:white; font-size:0.84rem; color:var(--gray-700); }
+.rcOptCorr { border-color:#10b981; background:#f0fdf4; color:#15803d; font-weight:600; }
+.rcOptWrong { border-color:#ef4444; background:#fff5f5; color:#dc2626; }
+.rcLetter { font-weight:800; font-size:0.78rem; width:22px; height:22px; border-radius:50%; background:var(--gray-100); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.rcOptCorr .rcLetter { background:#10b981; color:white; }
+.rcOptWrong .rcLetter { background:#ef4444; color:white; }
+.rcIcon { margin-left:auto; flex-shrink:0; }
+.rcExpl { margin-top:10px; padding:10px 13px; background:#eff6ff; border-radius:8px; font-size:0.8rem; color:var(--gray-700); line-height:1.55; border-left:3px solid var(--primary); }
+
+.bottomActions { display:flex; gap:12px; justify-content:center; padding-bottom:12px; }
+.btnPrimary { display:flex; align-items:center; gap:7px; background:var(--primary); color:white; padding:12px 26px; border-radius:var(--radius-sm); font-weight:700; transition:all 0.2s; }
+.btnPrimary:hover { background:var(--primary-dark); color:white; }
+.btnOutline { display:flex; align-items:center; gap:7px; border:2px solid var(--gray-200); color:var(--gray-700); padding:12px 26px; border-radius:var(--radius-sm); font-weight:600; transition:all 0.2s; }
+.btnOutline:hover { border-color:var(--primary); color:var(--primary); }
+
+@media (max-width:640px) { .statsRow { grid-template-columns:repeat(3,1fr); } .hero { flex-direction:column; text-align:center; } }

@@ -1,0 +1,107 @@
+.page { min-height: 100vh; background: #ffffff; }
+
+/* Nav */
+.nav { display:flex; align-items:center; gap:20px; padding:16px 60px; background:rgba(255,255,255,0.95); backdrop-filter:blur(12px); border-bottom:1px solid var(--gray-100); position:sticky; top:0; z-index:100; box-shadow:0 1px 0 rgba(0,0,0,0.05); }
+.navLogo { display:flex; align-items:center; gap:9px; font-family:var(--font-display); font-weight:800; font-size:1.1rem; color:var(--primary); }
+.navLogoIcon { width:34px; height:34px; border-radius:9px; background:linear-gradient(135deg,var(--primary),#0ea5e9); display:flex; align-items:center; justify-content:center; color:white; }
+.navLinks { display:flex; gap:24px; margin-left:24px; }
+.navLink { color:var(--gray-600); font-size:0.875rem; font-weight:500; transition:color 0.2s; }
+.navLink:hover { color:var(--primary); }
+.navActions { display:flex; align-items:center; gap:10px; margin-left:auto; }
+.navLoginBtn { color:var(--gray-700); font-weight:600; padding:9px 18px; border-radius:9px; font-size:0.875rem; transition:all 0.2s; }
+.navLoginBtn:hover { background:var(--gray-100); color:var(--gray-900); }
+.navRegisterBtn { display:flex; align-items:center; gap:6px; background:var(--primary); color:white; padding:10px 20px; border-radius:10px; font-weight:700; font-size:0.875rem; transition:all 0.2s; box-shadow:0 4px 14px rgba(37,99,235,0.3); }
+.navRegisterBtn:hover { background:var(--primary-dark); transform:translateY(-1px); color:white; }
+
+/* Hero */
+.hero { display:flex; align-items:center; justify-content:space-between; gap:60px; padding:80px 60px; max-width:1280px; margin:0 auto; }
+.heroInner { flex:1; max-width:580px; }
+.heroBadge { display:inline-flex; align-items:center; gap:6px; background:linear-gradient(135deg,#eff6ff,#dbeafe); color:var(--primary); padding:7px 14px; border-radius:99px; font-size:0.78rem; font-weight:700; margin-bottom:20px; border:1px solid #bfdbfe; }
+.heroTitle { font-size:3.4rem; line-height:1.12; color:var(--gray-900); margin-bottom:20px; }
+.heroGrad { background:linear-gradient(135deg,var(--primary),#0ea5e9); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.heroDesc { font-size:1.05rem; color:var(--gray-500); line-height:1.75; margin-bottom:32px; }
+.heroCtas { display:flex; gap:12px; margin-bottom:22px; flex-wrap:wrap; }
+.ctaPrimary { display:flex; align-items:center; gap:8px; background:linear-gradient(135deg,var(--primary),#0ea5e9); color:white; padding:14px 28px; border-radius:12px; font-weight:800; font-size:0.95rem; transition:all 0.2s; box-shadow:0 6px 20px rgba(37,99,235,0.35); }
+.ctaPrimary:hover { transform:translateY(-2px); box-shadow:0 10px 28px rgba(37,99,235,0.45); color:white; }
+.ctaOutline { display:flex; align-items:center; gap:8px; border:2px solid var(--gray-300); color:var(--gray-700); padding:14px 28px; border-radius:12px; font-weight:700; font-size:0.95rem; transition:all 0.2s; }
+.ctaOutline:hover { border-color:var(--primary); color:var(--primary); background:var(--primary-lighter); }
+.heroTrust { display:flex; align-items:center; gap:18px; font-size:0.8rem; color:var(--gray-500); flex-wrap:wrap; }
+.heroTrust span { display:flex; align-items:center; gap:5px; }
+
+/* Visual card */
+.heroVisual { position:relative; flex:1; max-width:460px; }
+.floatCard { background:white; border-radius:18px; box-shadow:0 24px 60px rgba(0,0,0,0.12); padding:24px; border:1px solid var(--gray-100); }
+.fcDots { display:flex; gap:6px; margin-bottom:16px; }
+.fcDots span { width:12px; height:12px; border-radius:50%; }
+.fcDots span:nth-child(1) { background:#ef4444; } .fcDots span:nth-child(2) { background:#f59e0b; } .fcDots span:nth-child(3) { background:#10b981; }
+.fcQuestion { font-weight:700; font-size:0.95rem; color:var(--gray-800); margin-bottom:16px; line-height:1.5; }
+.fcOptions { display:flex; flex-direction:column; gap:9px; }
+.fcOpt { display:flex; align-items:center; gap:10px; padding:11px 14px; border-radius:9px; border:1.5px solid var(--gray-200); font-size:0.875rem; color:var(--gray-700); }
+.fcOptCorrect { border-color:#10b981; background:#f0fdf4; color:#065f46; font-weight:700; }
+.fcLetter { width:26px; height:26px; border-radius:50%; background:var(--gray-100); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.78rem; flex-shrink:0; }
+.fcOptCorrect .fcLetter { background:#10b981; color:white; }
+.fcCheck { margin-left:auto; }
+.floatBadge1,.floatBadge2,.floatBadge3 { position:absolute; background:white; border-radius:12px; padding:9px 14px; box-shadow:0 8px 24px rgba(0,0,0,0.1); font-size:0.78rem; font-weight:700; border:1px solid var(--gray-100); white-space:nowrap; display:flex; align-items:center; gap:6px; }
+.floatBadge1 { top:-18px; right:-16px; color:var(--warning); animation:bounce 2s ease infinite; }
+.floatBadge2 { bottom:60px; left:-24px; color:#d97706; }
+.floatBadge3 { bottom:-18px; right:10px; color:#059669; }
+
+/* Stats bar */
+.statsBar { background:linear-gradient(135deg,#0f172a,#1e3a8a); padding:28px 60px; display:flex; justify-content:center; gap:48px; flex-wrap:wrap; }
+.statItem { display:flex; align-items:center; gap:12px; }
+.statEmoji { font-size:1.5rem; }
+.statItem strong { display:block; font-size:0.95rem; font-weight:800; color:white; }
+.statItem small { font-size:0.72rem; color:rgba(255,255,255,0.55); }
+
+/* Section shared */
+.sectionLabel { text-align:center; font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:2px; color:var(--primary); margin-bottom:10px; }
+.sectionTitle { text-align:center; font-size:2.2rem; color:var(--gray-900); margin-bottom:12px; }
+.sectionDesc { text-align:center; color:var(--gray-500); font-size:1rem; max-width:560px; margin:0 auto 52px; line-height:1.7; }
+
+/* Features */
+.features { padding:88px 60px; background:#f8fafc; }
+.featGrid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:22px; max-width:1100px; margin:0 auto; }
+.featCard { background:white; border-radius:16px; padding:26px; border:1px solid var(--gray-100); box-shadow:0 2px 8px rgba(0,0,0,0.04); transition:all 0.3s; }
+.featCard:hover { transform:translateY(-5px); box-shadow:0 12px 32px rgba(37,99,235,0.1); border-color:#bfdbfe; }
+.featIcon { font-size:2rem; margin-bottom:14px; }
+.featCard h3 { font-size:0.95rem; font-weight:800; color:var(--gray-800); margin-bottom:8px; }
+.featCard p { font-size:0.82rem; color:var(--gray-500); line-height:1.65; }
+
+/* Roles */
+.roles { padding:88px 60px; background:white; }
+.rolesGrid { display:grid; grid-template-columns:1fr 1fr; gap:28px; max-width:900px; margin:0 auto; }
+.roleCard { border-radius:20px; overflow:hidden; border:1px solid var(--gray-100); box-shadow:0 4px 16px rgba(0,0,0,0.06); }
+.roleHero { padding:32px; text-align:center; }
+.roleEmoji { font-size:2.5rem; display:block; margin-bottom:10px; }
+.roleHero h3 { font-size:1.4rem; color:white; }
+.roleList { padding:22px 26px; display:flex; flex-direction:column; gap:11px; }
+.roleList li { display:flex; align-items:center; gap:9px; font-size:0.875rem; color:var(--gray-700); }
+.roleBtn { display:flex; align-items:center; justify-content:center; gap:7px; margin:0 26px 22px; padding:13px; background:var(--primary); color:white; border-radius:11px; font-weight:800; font-size:0.875rem; transition:all 0.2s; }
+.roleBtn:hover { background:var(--primary-dark); transform:translateY(-1px); color:white; }
+
+/* CTA */
+.cta { background:linear-gradient(135deg,#0f172a,#1e3a8a,#1e40af); padding:88px 60px; text-align:center; }
+.cta h2 { font-size:2.2rem; color:white; margin-bottom:12px; }
+.cta p { color:rgba(255,255,255,0.7); font-size:1rem; margin-bottom:32px; }
+.cta .ctaPrimary { display:inline-flex; }
+
+/* Footer */
+.footer { background:#0f172a; padding:28px 60px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+.footer .navLogo { color:white; }
+.footer .navLogoIcon { background:rgba(255,255,255,0.15); }
+.footer p { font-size:0.8rem; color:rgba(255,255,255,0.4); }
+.footerLink { font-size:0.8rem; color:rgba(255,255,255,0.5); transition:color 0.2s; }
+.footerLink:hover { color:white; }
+
+@media (max-width:960px) {
+  .hero { flex-direction:column; padding:50px 28px; gap:40px; }
+  .heroTitle { font-size:2.4rem; }
+  .heroVisual { display:none; }
+  .features, .roles { padding:60px 28px; }
+  .rolesGrid { grid-template-columns:1fr; }
+  .statsBar { padding:24px 28px; gap:24px; }
+  .nav { padding:14px 22px; }
+  .navLinks { display:none; }
+  .footer { padding:24px 22px; }
+  .cta { padding:60px 28px; }
+}

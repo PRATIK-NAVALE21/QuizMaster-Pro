@@ -1,0 +1,79 @@
+.page { display:flex; flex-direction:column; gap:20px; animation:fadeIn 0.4s ease; }
+.center { display:flex; justify-content:center; padding:60px; }
+.hero {
+  background:linear-gradient(135deg,#1e3a8a,#2563eb,#0ea5e9);
+  border-radius:var(--radius-lg); padding:28px 32px;
+  display:flex; align-items:center; gap:18px; color:white; flex-wrap:wrap;
+}
+.hero h1 { font-size:1.5rem; color:white; margin-bottom:4px; }
+.hero p { color:rgba(255,255,255,0.78); font-size:0.875rem; }
+.myRankCard {
+  margin-left:auto; background:rgba(255,255,255,0.15);
+  border:1px solid rgba(255,255,255,0.25); border-radius:var(--radius);
+  padding:14px 22px; text-align:center;
+}
+.myRankCard span { display:block; font-size:0.7rem; color:rgba(255,255,255,0.65); text-transform:uppercase; letter-spacing:1px; }
+.myRankCard strong { font-family:var(--font-display); font-size:1.8rem; color:white; }
+
+.myCard {
+  background:linear-gradient(135deg,var(--primary-lighter),#e0f2fe);
+  border:2px solid var(--primary-light); border-radius:var(--radius);
+  padding:18px 22px; display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+}
+.myRankBig { font-family:var(--font-display); font-size:2rem; font-weight:800; color:var(--primary); min-width:60px; }
+.myAvatar {
+  width:44px; height:44px; border-radius:50%;
+  background:linear-gradient(135deg,var(--primary),#0ea5e9);
+  display:flex; align-items:center; justify-content:center;
+  font-weight:800; font-size:1.1rem; color:white; flex-shrink:0;
+}
+.myInfo { flex:1; }
+.myName { font-weight:700; font-size:0.95rem; color:var(--gray-800); margin-bottom:2px; display:flex; align-items:center; gap:8px; }
+.myDept { font-size:0.78rem; color:var(--gray-500); }
+.myStats { display:flex; gap:20px; }
+.myStats div { display:flex; flex-direction:column; align-items:center; gap:2px; }
+.myStats strong { font-size:1rem; font-weight:800; color:var(--gray-800); }
+.myStats small { font-size:0.65rem; color:var(--gray-400); }
+.youTag { background:var(--primary); color:white; font-size:0.65rem; font-weight:800; padding:2px 8px; border-radius:99px; text-transform:uppercase; letter-spacing:0.5px; }
+
+.controls { display:flex; gap:12px; }
+.searchWrap { position:relative; flex:1; max-width:360px; }
+.searchIcon { position:absolute; left:13px; top:50%; transform:translateY(-50%); color:var(--gray-400); pointer-events:none; }
+.searchWrap input { width:100%; padding:11px 14px 11px 40px; border:1.5px solid var(--gray-200); border-radius:var(--radius-sm); font-size:0.875rem; outline:none; background:white; box-shadow:var(--shadow-sm); transition:border-color 0.2s; }
+.searchWrap input:focus { border-color:var(--primary); box-shadow:0 0 0 3px rgba(37,99,235,0.1); }
+
+.table { background:white; border-radius:var(--radius); border:1px solid var(--gray-100); box-shadow:var(--shadow-sm); overflow:hidden; }
+.tableHead {
+  display:grid; grid-template-columns:70px 1fr 140px 80px 90px 80px 100px;
+  padding:12px 20px; background:var(--gray-50); border-bottom:1px solid var(--gray-200);
+  font-size:0.72rem; font-weight:700; color:var(--gray-500); text-transform:uppercase; letter-spacing:0.5px;
+}
+.tableRow {
+  display:grid; grid-template-columns:70px 1fr 140px 80px 90px 80px 100px;
+  padding:14px 20px; border-bottom:1px solid var(--gray-50); align-items:center;
+  transition:background 0.15s;
+}
+.tableRow:last-child { border-bottom:none; }
+.tableRow:hover { background:var(--gray-50); }
+.myRow { background:var(--primary-lighter) !important; }
+.topRow:first-child { border-top:2px solid #f59e0b; }
+.rankCell { display:flex; align-items:center; }
+.medal { font-size:1.4rem; }
+.rankNum { font-weight:800; font-size:0.95rem; color:var(--gray-600); }
+.userCell { display:flex; align-items:center; gap:12px; }
+.avatar { width:36px; height:36px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.9rem; color:white; flex-shrink:0; }
+.userName { font-size:0.875rem; font-weight:700; color:var(--gray-800); display:flex; align-items:center; gap:6px; }
+.studentId { font-size:0.7rem; color:var(--gray-400); }
+.dept { font-size:0.8rem; color:var(--gray-500); }
+.levelPill { background:var(--primary-light); color:var(--primary); font-size:0.72rem; font-weight:800; padding:4px 10px; border-radius:20px; display:inline-block; }
+.xpCell { font-size:0.875rem; font-weight:700; color:var(--warning); display:flex; align-items:center; gap:5px; }
+.streakCell { font-size:0.875rem; font-weight:700; color:var(--gray-700); }
+.badgesCell { display:flex; gap:4px; flex-wrap:wrap; }
+.badgeEmoji { font-size:1.1rem; }
+
+@media (max-width:900px) {
+  .tableHead, .tableRow { grid-template-columns:50px 1fr 80px 70px; }
+  .tableHead span:nth-child(3), .tableRow span:nth-child(3),
+  .tableHead span:nth-child(6), .tableRow span:nth-child(6),
+  .tableHead span:nth-child(7), .tableRow span:nth-child(7) { display:none; }
+}
