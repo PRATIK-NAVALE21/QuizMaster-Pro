@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Layout from '../../components/Layout';
 import api from '../../utils/api';
-import { FiCheckCircle, FiXCircle, FiArrowLeft, FiClock, FiAward, FiStar, FiDownload } from 'react-icons/fi';
+import { FiCheckCircle, FiXCircle, FiArrowLeft,   FiStar, FiDownload } from 'react-icons/fi';
 import { MdQuiz } from 'react-icons/md';
 import { format } from 'date-fns';
 import styles from './QuizResult.module.css';

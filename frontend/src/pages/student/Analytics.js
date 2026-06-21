@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '../../components/Layout';
 import api from '../../utils/api';
-import { RadarChart, Radar, PolarGrid, PolarAngleAxis, ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, BarChart, Bar, Legend } from 'recharts';
+import { RadarChart, Radar, PolarGrid, PolarAngleAxis, ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import { FiTrendingUp, FiTarget, FiAward } from 'react-icons/fi';
 import styles from './Analytics.module.css';
 

@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import Layout from '../../components/Layout';
 import api from '../../utils/api';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, PieChart, Pie, Cell } from 'recharts';
-import { FiArrowLeft, FiDownload, FiSearch, FiFilter } from 'react-icons/fi';
+import { FiArrowLeft, FiDownload, FiSearch } from 'react-icons/fi';
 import { format } from 'date-fns';
 import styles from './QuizResults.module.css';
 

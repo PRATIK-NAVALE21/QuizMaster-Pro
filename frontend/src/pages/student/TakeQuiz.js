@@ -23,7 +23,7 @@ export default function TakeQuiz() {
   const [accessCode, setAccessCode] = useState('');
   const timerRef = useRef(null);
   const startRef = useRef(null);
-  const questionRefs = useRef({});
+  //const questionRefs = useRef({});
 
   useEffect(() => {
     api.get(`/quizzes/${id}`).then(r => { setQuiz(r.data.data); setTimeLeft(r.data.data.duration * 60); setPhase('intro'); })
