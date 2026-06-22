@@ -23,7 +23,7 @@ const authLimiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 20, message: { su
 app.use('/api/', limiter);
 app.use('/api/auth/login', authLimiter);
 app.use('/api/auth/register', authLimiter);
-console.log("FRONTEND_URL =", process.env.FRONTEND_URL);
+//console.log("FRONTEND_URL =", process.env.FRONTEND_URL);
 // CORS
 // app.use(cors({
 //   origin: [process.env.FRONTEND_URL || 'http://localhost:3000', 'http://localhost:3001'],
